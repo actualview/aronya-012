@@ -6,10 +6,10 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: 'Trex',
+            name: 'Pink',
             location: {
-                lat: 35.152130,
-                lng: 129.134997,
+                lat: 35.149119,
+                lng: 129.065069,
             }
         },
     ];
@@ -23,11 +23,12 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${35.152130}; longitude: ${129.134997};`);
-        model.setAttribute('gltf-model', './assets/trex/scene.gltf');
+        model.setAttribute('gps-entity-place', `latitude: ${35.149119}; longitude: ${129.065069};`);
+        model.setAttribute('gltf-model', './assets/pink/Pink.gltf');
         model.setAttribute('rotation', '0 5 0');
+        model.setAttribute('position', '0 100 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '0.01 0.01 0.01');
+        model.setAttribute('scale', '100 100 100');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
