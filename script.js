@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'Pink',
             location: {
-                lat: 35.152130,
-                lng: 129.134997,
+                lat: 35.160146,
+                lng: 129.140792,
             }
         },
     ];
@@ -23,7 +23,7 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${35.152130}; longitude: ${129.134997};`);
+        model.setAttribute('gps-entity-place', `latitude: ${35.160146}; longitude: ${129.140792};`);
         model.setAttribute('gltf-model', './assets/pink/Pink.gltf');
         model.setAttribute('rotation', '0 5 0');
         model.setAttribute('position', '0 400 0');
