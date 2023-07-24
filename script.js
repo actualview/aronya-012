@@ -27,7 +27,7 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './assets/whale/scene.glb');
         model.setAttribute('rotation', '0 160 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '0.01 0.01 0.01');
+        model.setAttribute('scale', '0.005 0.005 0.005');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
