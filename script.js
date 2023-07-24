@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'Whale',
             location: {
-                lat: 35.149146,
-                lng: 129.065263,
+                lat: 35.149027,
+                lng: 129.065187,
             }
         },
     ];
@@ -23,7 +23,7 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${35.149146}; longitude: ${129.065263};`);
+        model.setAttribute('gps-entity-place', `latitude: ${35.149027}; longitude: ${129.065187};`);
         model.setAttribute('gltf-model', './assets/whale/scene.glb');
         model.setAttribute('rotation', '0 160 0');
         model.setAttribute('animation-mixer', '');
