@@ -25,10 +25,10 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${35.149146}; longitude: ${129.065263};`);
         model.setAttribute('gltf-model', './assets/whale.glb');
-        model.setAttribute('position', '0 0 5');
-        model.setAttribute('rotation', '0 5 0');
+        model.setAttribute('position', '0 0 10');
+        model.setAttribute('rotation', '0 45 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '0.01 0.01 0.01');
+        model.setAttribute('scale', '0.008 0.008 0.008');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
