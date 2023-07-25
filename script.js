@@ -24,7 +24,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${35.149027}; longitude: ${129.065187};`);
-        model.setAttribute('gltf-model', './assets/whale/scene.gltf');
+        model.setAttribute('gltf-model', './assets/whale.gltf');
         model.setAttribute('rotation', '0 30 0');
         model.setAttribute('position', '0 0 5');
         model.setAttribute('animation-mixer', '');
